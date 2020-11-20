@@ -1,0 +1,14 @@
+.contact-list{
+
+	margin-top: 10px;
+}
+
+.delete{
+
+	float: right;
+}
+
+.edit{
+	float : right;
+	margin-right: 2px; 
+}

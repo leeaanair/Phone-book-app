@@ -1,0 +1,16 @@
+<span>
+<input [(ngModel)]="searchText" type="text" name="search" placeholder="Search for contact by name..." size=50 (input)="changeSearchContact()"> 
+
+	  <span class="sort">
+	    <div ngbDropdown class="d-inline-block">
+	      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-sort"></i></button>
+	      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+	        <button ngbDropdownItem (click)="sort('fname', 'asc')">Order by name ascending</button>
+	        <button ngbDropdownItem (click)="sort('fname', 'desc')">Order by name descending</button>
+	        <button ngbDropdownItem (click)="sort('phone', 'asc')">Order by number ascending</button>
+	        <button ngbDropdownItem (click)="sort('phone', 'desc')">Order by number descending</button>
+
+	      </div>
+	    </div>
+	  </span>
+</span>

@@ -1,0 +1,10 @@
+<div class="contact-list">
+<div *ngFor="let person of dataService.persons | searchPipe : this.searchDataService.searchData | sort : [this.sortDataService.sortArg.param, this.sortDataService.sortArg.order]">
+<div class="card">
+  <div class="card-body">
+<h5 class="card-title">{{person.fname}} {{person.lname}}</h5>
+ <span><p class="card-text">{{person.phone}}<button class="delete btn btn-danger" (click) = "delete(person)"><i class="fa fa-trash"></i></button><button class="edit btn btn-warning"  (click)="edit(person)"><i class="fa fa-edit"></i></button></p></span>
+  </div>
+</div>
+</div>
+

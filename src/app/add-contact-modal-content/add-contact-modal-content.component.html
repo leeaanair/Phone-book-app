@@ -1,0 +1,28 @@
+    <div class="modal-header">
+      <h4 class="modal-title">Add New Contact</h4>
+      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form #contactForm = "ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>First Name</label>
+          <input name="fname" class="form-control" size="50" [(ngModel)]="personModel.fname">
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input name="lname" class="form-control" size="50" [(ngModel)]="personModel.lname">
+        </div>
+
+
+          <div class="form-group">
+          <label>Phone</label>
+          <input name="phone" class="form-control" size="10" [(ngModel)]="personModel.phone">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Save</button>
+      </form>
+
+    </div>
