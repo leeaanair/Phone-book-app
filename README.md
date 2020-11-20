@@ -19,3 +19,6 @@ An angular project which :
 1. Download the project and extract it.
 2. In your terminal, go to the project folder and type `npm install`. This will install all necessary packages in package.json
 3. `ng serve` to run the project at localhost:4200
+
+## Output:
+![Phone Book App](/home/leeaa/Videos/Phone Book App/ezgif.com-video-to-gif(1).gif)
