@@ -21,4 +21,4 @@ An angular project which :
 3. `ng serve` to run the project at localhost:4200
 
 ## Output:
-![Phone Book App](/home/leeaa/Videos/Phone Book App/ezgif.com-video-to-gif(1).gif)
+![Phone Book App](ezgif.com-video-to-gif(1).gif)
